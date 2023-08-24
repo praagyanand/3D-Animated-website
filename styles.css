@@ -1,0 +1,38 @@
+body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     margin: 0;
+     background-color: #f0f0f0;
+     font-family: Arial, sans-serif;
+   }
+   
+   .container {
+     display: flex;
+     align-items: center;
+   }
+   
+   .video-wrapper, .photo-wrapper {
+     width: 50%;
+     padding: 20px;
+   }
+   
+   #video, #photo {
+     max-width: 100%;
+     display: block;
+   }
+   
+   .photo-wrapper {
+     animation: photoAnimation 5s infinite alternate;
+   }
+   
+   @keyframes photoAnimation {
+     0% {
+       transform: translateY(0);
+     }
+     100% {
+       transform: translateY(20px);
+     }
+   }
+   
